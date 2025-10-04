@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>School Management System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-sans text-gray-800">
+    <!-- Navbar -->
+    <header class="fixed top-0 left-0 w-full bg-white shadow z-50">
+      <div class="container mx-auto flex justify-between items-center p-4">
+        <h1 class="text-xl font-bold text-blue-600">EduManage</h1>
+        <nav class="space-x-6">
+          <a href="#hero" class="hover:text-blue-600">Home</a>
+          <a href="#about" class="hover:text-blue-600">About</a>
+          <a href="#services" class="hover:text-blue-600">Services</a>
+          <a href="#institutes" class="hover:text-blue-600">Institutes</a>
+          <a href="#contact" class="hover:text-blue-600">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <!-- Hero Section -->
+    <section
+      id="hero"
+      class="py-64 flex justify-center items-center bg-gradient-to-r from-blue-600 to-indigo-700 text-white text-center px-4 relative"
+    >
+      <!-- Background Image -->
+      <div
+        class="absolute inset-0 bg-cover bg-center opacity-40"
+        style="
+          background-image: url('https://cdn.pixabay.com/photo/2016/04/22/13/44/girl-1345800_640.jpg');
+        "
+      ></div>
+
+      <!-- Content -->
+      <div class="relative z-10 max-w-3xl">
+        <h2 class="text-5xl font-bold mb-6 uppercase">
+          School Management System
+        </h2>
+        <p class="text-lg md:text-xl mb-8">
+          Go fully online, paperless, and efficient. Manage admissions,
+          students, staff, exams, and accounts – all in one platform.
+        </p>
+        <a
+          href="#contact"
+          class="bg-white text-blue-700 font-semibold px-6 py-3 rounded-full shadow hover:bg-gray-100 transition"
+        >
+          Request a Demo
+        </a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-50">
+      <div class="container mx-auto px-6 md:px-12 text-center">
+        <div class="flex items-center justify-center mb-12">
+          <!-- Left line -->
+          <div
+            class="w-16 h-1 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-full"
+          ></div>
+
+          <!-- Title -->
+          <h3
+            class="px-6 text-2xl md:text-3xl uppercase tracking-wide text-gray-800"
+            style="font-family: 'Poppins', sans-serif"
+          >
+            Why Choose EduManage?
+          </h3>
+
+          <!-- Right line -->
+          <div
+            class="w-16 h-1 bg-gradient-to-r from-indigo-600 to-blue-600 rounded-full"
+          ></div>
+        </div>
+        <p class="max-w-3xl mx-auto text-gray-600">
+          Our School Management System is designed to simplify every process –
+          from admissions to exams – making your institution fully digital,
+          paperless, and accessible anytime, anywhere.
+        </p>
+      </div>
+    </section>
+
+    <!-- Counter Section -->
+    <section
+      id="counters"
+      class="py-20 bg-gradient-to-r from-blue-50 to-indigo-50"
+    >
+      <div class="container mx-auto px-6 md:px-12">
+        <!-- Section Title -->
+        <div class="text-center mb-12">
+          <div class="flex items-center justify-center mb-6">
+            <!-- Left line -->
+            <div
+              class="w-12 h-1 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-full"
+            ></div>
+
+            <!-- Title -->
+            <h3
+              class="px-6 text-2xl md:text-3xl uppercase tracking-wider text-gray-800"
+              style="font-family: 'Poppins', sans-serif"
+            >
+              Our Growth in Numbers
+            </h3>
+
+            <!-- Right line -->
+            <div
+              class="w-12 h-1 bg-gradient-to-r from-indigo-600 to-blue-600 rounded-full"
+            ></div>
+          </div>
+          <p class="mt-3 text-gray-600 max-w-2xl mx-auto">
+            Trusted by schools, students, and educators across the country.
+            Here’s a quick look at what we’ve achieved so far.
+          </p>
+        </div>
+
+        <!-- Counters Grid -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+          <!-- Schools -->
+          <div
+            class="p-8 rounded-2xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2 bg-red-50"
+          >
+            <h3
+              class="text-5xl md:text-6xl font-extrabold text-red-600 counter"
+              data-target="1"
+            >
+              0
+            </h3>
+            <p
+              class="mt-3 text-gray-700 text-lg font-medium uppercase tracking-wide"
+            >
+              Schools
+            </p>
+          </div>
+
+          <!-- Users -->
+          <div
+            class="p-8 rounded-2xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2 bg-green-50"
+          >
+            <h3
+              class="text-5xl md:text-6xl font-extrabold text-green-600 counter"
+              data-target="12000"
+            >
+              0
+            </h3>
+            <p
+              class="mt-3 text-gray-700 text-lg font-medium uppercase tracking-wide"
+            >
+              Users
+            </p>
+          </div>
+
+          <!-- Years -->
+          <div
+            class="p-8 rounded-2xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2 bg-yellow-50"
+          >
+            <h3
+              class="text-5xl md:text-6xl font-extrabold text-yellow-600 counter"
+              data-target="1"
+            >
+              0
+            </h3>
+            <p
+              class="mt-3 text-gray-700 text-lg font-medium uppercase tracking-wide"
+            >
+              Years
+            </p>
+          </div>
+
+          <!-- Students -->
+          <div
+            class="p-8 rounded-2xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2 bg-purple-50"
+          >
+            <h3
+              class="text-5xl md:text-6xl font-extrabold text-purple-600 counter"
+              data-target="11048"
+            >
+              0
+            </h3>
+            <p
+              class="mt-3 text-gray-700 text-lg font-medium uppercase tracking-wide"
+            >
+              Students
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-50">
+      <div class="container mx-auto px-6 md:px-12 text-center">
+        <div class="flex items-center justify-center mb-12">
+          <!-- Left line -->
+          <div
+            class="w-16 h-1 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-full"
+          ></div>
+
+          <!-- Title -->
+          <h3
+            class="px-6 text-2xl md:text-3xl uppercase tracking-wide text-gray-800"
+            style="font-family: 'Poppins', sans-serif"
+          >
+            Our Services
+          </h3>
+
+          <!-- Right line -->
+          <div
+            class="w-16 h-1 bg-gradient-to-r from-indigo-600 to-blue-600 rounded-full"
+          ></div>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Online Admission -->
+          <div
+            class="p-6 rounded-2xl shadow hover:shadow-xl transition transform hover:-translate-y-2 bg-blue-50 text-center"
+          >
+            <div class="flex justify-center mb-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-12 w-12 text-blue-600"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 14l9-5-9-5-9 5 9 5z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 14l6.16-3.422a12.083 12.083 0 01.34 6.684L12 20l-6.5-2.738a12.083 12.083 0 01.34-6.684L12 14z"
+                />
+              </svg>
+            </div>
+            <h4 class="text-lg font-semibold text-gray-700">
+              Online Admission & Enrollment
+            </h4>
+          </div>
+
+          <!-- Student Information System -->
+          <div
+            class="p-6 rounded-2xl shadow hover:shadow-xl transition transform hover:-translate-y-2 bg-green-50 text-center"
+          >
+            <div class="flex justify-center mb-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-12 w-12 text-green-600"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M5.121 17.804A9.969 9.969 0 0112 15c2.21 0 4.21.716 5.879 1.804M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                />
+              </svg>
+            </div>
+            <h4 class="text-lg font-semibold text-gray-700">
+              Student Information System
+            </h4>
+          </div>
+
+          <!-- Attendance Management -->
+          <div
+            class="p-6 rounded-2xl shadow hover:shadow-xl transition transform hover:-translate-y-2 bg-yellow-50 text-center"
+          >
+            <div class="flex justify-center mb-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-12 w-12 text-yellow-600"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M8 7V3m8 4V3m-9 8h10m-7 4h4m-9 4h10m1-16h-6a2 2 0 00-2 2v14a2 2 0 002 2h6a2 2 0 002-2V5a2 2 0 00-2-2z"
+                />
+              </svg>
+            </div>
+            <h4 class="text-lg font-semibold text-gray-700">
+              Attendance Management
+            </h4>
+          </div>
+
+          <!-- Teachers Attendance -->
+          <div
+            class="p-6 rounded-2xl shadow hover:shadow-xl transition transform hover:-translate-y-2 bg-purple-50 text-center"
+          >
+            <div class="flex justify-center mb-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-12 w-12 text-purple-600"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M17 20h5v-2a4 4 0 00-4-4h-1M9 20H4v-2a4 4 0 014-4h1m0 0V9a4 4 0 118 0v5m-8 0h8"
+                />
+              </svg>
+            </div>
+            <h4 class="text-lg font-semibold text-gray-700">
+              Teachers Attendance
+            </h4>
+          </div>
+
+          <!-- Exam & Results Automation -->
+          <div
+            class="p-6 rounded-2xl shadow hover:shadow-xl transition transform hover:-translate-y-2 bg-pink-50 text-center"
+          >
+            <div class="flex justify-center mb-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-12 w-12 text-pink-600"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 17v-6h6v6M13 13h4v8H7v-8h4v4z"
+                />
+              </svg>
+            </div>
+            <h4 class="text-lg font-semibold text-gray-700">
+              Exam & Results Automation
+            </h4>
+          </div>
+
+          <!-- Fee Collection & Accounts -->
+          <div
+            class="p-6 rounded-2xl shadow hover:shadow-xl transition transform hover:-translate-y-2 bg-red-50 text-center"
+          >
+            <div class="flex justify-center mb-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-12 w-12 text-red-600"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 8c-1.657 0-3 .843-3 1.882C9 11.343 10.343 12 12 12s3 .657 3 2.118C15 15.157 13.657 16 12 16s-3-.843-3-1.882M12 20v-2m0-8V4"
+                />
+              </svg>
+            </div>
+            <h4 class="text-lg font-semibold text-gray-700">
+              Fee Collection & Accounts
+            </h4>
+          </div>
+
+          <!-- Library Management -->
+          <div
+            class="p-6 rounded-2xl shadow hover:shadow-xl transition transform hover:-translate-y-2 bg-indigo-50 text-center"
+          >
+            <div class="flex justify-center mb-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-12 w-12 text-indigo-600"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 6V4m0 16v-2m-7.071-7.071l1.414-1.414M18.364 18.364l-1.414-1.414M6 12H4m16 0h-2m-7.071 7.071l-1.414-1.414M18.364 5.636l-1.414 1.414"
+                />
+              </svg>
+            </div>
+            <h4 class="text-lg font-semibold text-gray-700">
+              Library Management
+            </h4>
+          </div>
+
+          <!-- Role-Based Dashboards -->
+          <div
+            class="p-6 rounded-2xl shadow hover:shadow-xl transition transform hover:-translate-y-2 bg-teal-50 text-center"
+          >
+            <div class="flex justify-center mb-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-12 w-12 text-teal-600"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 17v-6h6v6M9 13h6M4 6h16"
+                />
+              </svg>
+            </div>
+            <h4 class="text-lg font-semibold text-gray-700">
+              Role-Based Dashboards
+            </h4>
+          </div>
+
+          <!-- Reports & Analytics -->
+          <div
+            class="p-6 rounded-2xl shadow hover:shadow-xl transition transform hover:-translate-y-2 bg-orange-50 text-center"
+          >
+            <div class="flex justify-center mb-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-12 w-12 text-orange-600"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M11 11V7a1 1 0 112 0v4a1 1 0 002 0V7a3 3 0 10-6 0v4a1 1 0 002 0z"
+                />
+              </svg>
+            </div>
+            <h4 class="text-lg font-semibold text-gray-700">
+              Reports & Analytics
+            </h4>
+          </div>
+
+          <!-- Student ID Card -->
+          <div
+            class="p-6 rounded-2xl shadow hover:shadow-xl transition transform hover:-translate-y-2 bg-cyan-50 text-center"
+          >
+            <div class="flex justify-center mb-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-12 w-12 text-cyan-600"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M16 7a4 4 0 01-8 0 4 4 0 018 0zM12 14v7m-6-7h12"
+                />
+              </svg>
+            </div>
+            <h4 class="text-lg font-semibold text-gray-700">Student ID Card</h4>
+          </div>
+
+          <!-- Transfer Certificate -->
+          <div
+            class="p-6 rounded-2xl shadow hover:shadow-xl transition transform hover:-translate-y-2 bg-lime-50 text-center"
+          >
+            <div class="flex justify-center mb-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-12 w-12 text-lime-600"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 8v4l3 3m6 5a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+            </div>
+            <h4 class="text-lg font-semibold text-gray-700">
+              Transfer Certificate
+            </h4>
+          </div>
+
+          <!-- Testimonial -->
+          <div
+            class="p-6 rounded-2xl shadow hover:shadow-xl transition transform hover:-translate-y-2 bg-fuchsia-50 text-center"
+          >
+            <div class="flex justify-center mb-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-12 w-12 text-fuchsia-600"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M7 8h10M7 12h8m-6 4h6m2 4H7a2 2 0 01-2-2V7a2 2 0 012-2h10a2 2 0 012 2v12a2 2 0 01-2 2z"
+                />
+              </svg>
+            </div>
+            <h4 class="text-lg font-semibold text-gray-700">Testimonial</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Institutes Section -->
+    <section id="institutes" class="py-20 bg-gray-50">
+      <div class="container mx-auto px-6 md:px-12 text-center">
+        <!-- Section Title -->
+        <div class="flex items-center justify-center mb-12">
+          <div
+            class="w-16 h-1 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-full"
+          ></div>
+          <h3
+            class="px-6 text-2xl md:text-3xl uppercase tracking-wide text-gray-800"
+            style="font-family: 'Poppins', sans-serif"
+          >
+            Our Current Service Institutes
+          </h3>
+          <div
+            class="w-16 h-1 bg-gradient-to-r from-indigo-600 to-blue-600 rounded-full"
+          ></div>
+        </div>
+
+        <!-- Logos Grid -->
+        <div class="flex flex-wrap justify-center gap-12">
+          <!-- Logo 1 -->
+          <a
+            href="https://bafsd.edu.bd/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="transform transition duration-500"
+          >
+            <img
+              src="https://bafsd.edu.bd/public/frontend/uploads/school_content/logo/front_logo-608ff44a5f8f07.35255544.png"
+              alt="BAF Shaheen College Dhaka"
+              class="h-24 mx-auto filter grayscale hover:grayscale-0 transition duration-500"
+            />
+          </a>
+
+          <!-- Add more logos as needed -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section
+      id="contact"
+      class="py-20 bg-gradient-to-r from-blue-50 via-white to-indigo-50 relative"
+    >
+      <div class="container mx-auto px-6 md:px-12">
+        <!-- Title -->
+        <div class="flex items-center justify-center mb-12">
+          <div
+            class="w-12 h-1 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-full"
+          ></div>
+          <h3
+            class="px-6 text-2xl md:text-3xl uppercase tracking-wider text-gray-800"
+            style="font-family: 'Poppins', sans-serif"
+          >
+            Contact Us
+          </h3>
+          <div
+            class="w-12 h-1 bg-gradient-to-r from-indigo-600 to-blue-600 rounded-full"
+          ></div>
+        </div>
+
+        <!-- Description -->
+        <p class="mb-12 text-center text-gray-600 max-w-2xl mx-auto">
+          Reach out to us for any inquiries. We are here to assist you in
+          managing your school efficiently.
+        </p>
+
+        <!-- Contact Info Grid -->
+        <div class="grid md:grid-cols-3 gap-10 text-center">
+          <!-- Address -->
+          <div
+            class="flex flex-col items-center bg-gray-50 p-8 rounded-2xl shadow-md hover:shadow-lg transition transform hover:-translate-y-2"
+          >
+            <div
+              class="w-16 h-16 flex items-center justify-center rounded-full bg-blue-100 text-blue-600 mb-4"
+            >
+              <!-- Map Pin SVG -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-8 w-8"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 11c1.656 0 3-1.344 3-3S13.656 5 12 5 9 6.344 9 8s1.344 3 3 3z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 22s8-4.5 8-11c0-4.418-3.582-8-8-8s-8 3.582-8 8c0 6.5 8 11 8 11z"
+                />
+              </svg>
+            </div>
+            <h4 class="font-semibold text-lg mb-2 text-gray-800">Address</h4>
+            <p class="text-gray-600">
+              Safura Trade City, Level-06, Pallabi, Mirpur-12, Dhaka,<br />
+              Dhaka-1230
+            </p>
+          </div>
+
+          <!-- Phone -->
+          <div
+            class="flex flex-col items-center bg-gray-50 p-8 rounded-2xl shadow-md hover:shadow-lg transition transform hover:-translate-y-2"
+          >
+            <div
+              class="w-16 h-16 flex items-center justify-center rounded-full bg-indigo-100 text-indigo-600 mb-4"
+            >
+              <!-- Phone SVG -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-8 w-8"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 5h2l3.6 7.59-1.35 2.45a11.042 11.042 0 005.15 5.15l2.45-1.35L19 19v2a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2z"
+                />
+              </svg>
+            </div>
+            <h4 class="font-semibold text-lg mb-2 text-gray-800">Phone</h4>
+            <p class="text-gray-600">+880 1754 291 492</p>
+          </div>
+
+          <!-- Email -->
+          <div
+            class="flex flex-col items-center bg-gray-50 p-8 rounded-2xl shadow-md hover:shadow-lg transition transform hover:-translate-y-2"
+          >
+            <div
+              class="w-16 h-16 flex items-center justify-center rounded-full bg-blue-100 text-blue-600 mb-4"
+            >
+              <!-- Email SVG -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-8 w-8"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M16 12H8m0 0l-4-4m4 4l-4 4m8-4h8"
+                />
+              </svg>
+            </div>
+            <h4 class="font-semibold text-lg mb-2 text-gray-800">Email</h4>
+            <p class="text-blue-600 font-medium">shahin@swimtech.org</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-6 text-center">
+      <p>© <span id="year"></span> EduManage. All rights reserved.</p>
+    </footer>
+
+    <script>
+      // Counter Animation
+      function animateCounter(counter) {
+        const target = +counter.getAttribute("data-target");
+        const speed = 200; // lower = faster
+        let count = 0;
+
+        const updateCounter = () => {
+          const increment = Math.ceil(target / speed);
+          if (count < target) {
+            count += increment;
+            counter.innerText = count > target ? target : count;
+            requestAnimationFrame(updateCounter);
+          } else {
+            // Add + for large numbers
+            if (target > 1000) {
+              counter.innerText = target.toLocaleString() + "+";
+            } else {
+              counter.innerText = target;
+            }
+          }
+        };
+
+        updateCounter();
+      }
+
+      // Trigger when section is visible
+      const counterSection = document.querySelector("#counters");
+      const counters = document.querySelectorAll(".counter");
+
+      const options = { threshold: 0.5 };
+      const observer = new IntersectionObserver((entries, obs) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            counters.forEach((counter) => animateCounter(counter));
+            obs.disconnect(); // run only once
+          }
+        });
+      }, options);
+
+      observer.observe(counterSection);
+    </script>
+
+    <script>
+      // Auto-update year
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      // Smooth scroll for nav
+      document.querySelectorAll("a[href^='#']").forEach((link) => {
+        link.addEventListener("click", function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
