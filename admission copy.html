@@ -12,8 +12,6 @@
     <style>
       body {
         font-family: "Poppins", sans-serif;
-        background: linear-gradient(135deg, #e0f2fe, #eef2ff, #f8fafc);
-        min-height: 100vh;
       }
 
       .input-group {
@@ -22,8 +20,8 @@
 
       .input-label {
         position: absolute;
-        top: 14px;
-        left: 14px;
+        top: 12px;
+        left: 16px;
         color: #6b7280;
         font-size: 0.95rem;
         pointer-events: none;
@@ -44,15 +42,16 @@
     </style>
   </head>
 
-  <body>
+  <body
+    class="bg-gradient-to-br from-blue-50 via-indigo-50 to-white min-h-screen"
+  >
     <!-- Header -->
     <header
-      class="fixed top-0 left-0 w-full bg-white/80 backdrop-blur-lg shadow z-50 border-b border-blue-100"
+      class="fixed top-0 left-0 w-full bg-white shadow-md z-50 border-b border-blue-100"
     >
       <div
-        class="max-w-7xl mx-auto flex justify-between items-center p-4 px-6 md:px-10"
+        class="container mx-auto flex justify-between items-center p-4 max-w-7xl"
       >
-        <!-- Logo -->
         <a
           href="/"
           class="flex items-center space-x-3 group transition-all duration-300"
@@ -60,7 +59,7 @@
           <img
             src="images.png"
             alt="SEMS Logo"
-            class="h-10 w-10 object-contain rounded-lg shadow-sm group-hover:scale-105 transition-transform"
+            class="h-10 w-10 object-contain rounded-md shadow-sm group-hover:scale-105 transition-transform duration-300"
           />
           <div class="flex flex-col leading-tight">
             <span
@@ -74,7 +73,7 @@
           </div>
         </a>
 
-        <nav class="hidden md:flex space-x-8 text-gray-600 font-medium">
+        <nav class="hidden md:flex space-x-6 text-gray-600 font-medium">
           <a href="/" class="hover:text-blue-600">Home</a>
           <a href="/admission.html" class="text-blue-600 font-semibold"
             >Admission</a
@@ -84,20 +83,18 @@
     </header>
 
     <!-- Form Section -->
-    <section
-      class="pt-32 pb-20 flex justify-center items-center min-h-screen px-4"
-    >
+    <section class="pt-28 pb-20">
       <div
-        class="w-full max-w-5xl bg-white/70 backdrop-blur-lg rounded-3xl shadow-2xl border border-blue-100 p-8 md:p-14"
+        class="max-w-5xl mx-auto bg-white/70 backdrop-blur-md rounded-3xl shadow-xl p-8 md:p-14 border border-blue-100"
       >
         <h2
-          class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12"
+          class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-10"
         >
           School Registration Form
         </h2>
 
         <form id="academyForm" class="grid md:grid-cols-2 gap-8">
-          <!-- Floating Inputs -->
+          <!-- Academy Name -->
           <div class="input-group">
             <input
               type="text"
@@ -105,11 +102,12 @@
               name="academy_name"
               required
               placeholder=" "
-              class="w-full p-3 border border-gray-300 rounded-lg bg-white focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"
+              class="w-full p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
             />
             <label for="academy_name" class="input-label">Academy Name</label>
           </div>
 
+          <!-- Short Name -->
           <div class="input-group">
             <input
               type="text"
@@ -117,11 +115,12 @@
               name="short_name"
               required
               placeholder=" "
-              class="w-full p-3 border border-gray-300 rounded-lg bg-white focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
+              class="w-full p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
             />
             <label for="short_name" class="input-label">Short Name</label>
           </div>
 
+          <!-- EIIN -->
           <div class="input-group">
             <input
               type="text"
@@ -129,11 +128,12 @@
               name="eiin"
               required
               placeholder=" "
-              class="w-full p-3 border border-gray-300 rounded-lg bg-white focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
+              class="w-full p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
             />
             <label for="eiin" class="input-label">EIIN Number</label>
           </div>
 
+          <!-- Email -->
           <div class="input-group">
             <input
               type="email"
@@ -141,11 +141,12 @@
               name="email"
               required
               placeholder=" "
-              class="w-full p-3 border border-gray-300 rounded-lg bg-white focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
+              class="w-full p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
             />
             <label for="email" class="input-label">Email Address</label>
           </div>
 
+          <!-- Phone -->
           <div class="input-group">
             <input
               type="tel"
@@ -153,11 +154,12 @@
               name="phone"
               required
               placeholder=" "
-              class="w-full p-3 border border-gray-300 rounded-lg bg-white focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
+              class="w-full p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
             />
             <label for="phone" class="input-label">Phone Number</label>
           </div>
 
+          <!-- Helpline Number -->
           <div class="input-group">
             <input
               type="tel"
@@ -165,13 +167,14 @@
               name="helpline_number"
               required
               placeholder=" "
-              class="w-full p-3 border border-gray-300 rounded-lg bg-white focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
+              class="w-full p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
             />
             <label for="helpline_number" class="input-label"
               >Helpline Number</label
             >
           </div>
 
+          <!-- Established Year -->
           <div class="input-group">
             <input
               type="number"
@@ -181,13 +184,14 @@
               max="2099"
               required
               placeholder=" "
-              class="w-full p-3 border border-gray-300 rounded-lg bg-white focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
+              class="w-full p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
             />
             <label for="established_year" class="input-label"
               >Established Year</label
             >
           </div>
 
+          <!-- Bank Account -->
           <div class="input-group">
             <input
               type="text"
@@ -195,13 +199,14 @@
               name="bank_account"
               required
               placeholder=" "
-              class="w-full p-3 border border-gray-300 rounded-lg bg-white focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
+              class="w-full p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
             />
             <label for="bank_account" class="input-label"
               >Bank Account Number</label
             >
           </div>
 
+          <!-- Address -->
           <div class="input-group md:col-span-2">
             <textarea
               id="address"
@@ -209,17 +214,17 @@
               rows="3"
               required
               placeholder=" "
-              class="w-full p-3 border border-gray-300 rounded-lg bg-white resize-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
+              class="w-full p-2 border border-gray-300 rounded-lg resize-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
             ></textarea>
             <label for="address" class="input-label">Address</label>
           </div>
 
-          <!-- File Uploads -->
+          <!-- Logo Upload -->
           <div>
             <label
               for="logo"
               class="block text-gray-700 font-medium mb-2 text-sm"
-              >Upload Logo (Max 500KB)</label
+              >Upload Logo (JPG/PNG, Max 500KB)</label
             >
             <input
               type="file"
@@ -229,6 +234,7 @@
               class="w-full px-4 py-3 border border-gray-300 rounded-lg bg-gray-50 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
             />
             <div id="logoPreview" class="mt-4 hidden">
+              <p class="text-sm text-gray-600 mb-2 font-medium">Preview:</p>
               <img
                 id="previewLogo"
                 class="h-20 w-20 object-cover rounded-lg shadow border border-gray-200"
@@ -238,11 +244,12 @@
             <p id="logoError" class="text-red-500 text-sm mt-2 hidden"></p>
           </div>
 
+          <!-- Icon Upload -->
           <div>
             <label
               for="icon"
               class="block text-gray-700 font-medium mb-2 text-sm"
-              >Upload Icon (Max 200KB)</label
+              >Upload Icon (JPG/PNG, Max 200KB)</label
             >
             <input
               type="file"
@@ -252,6 +259,7 @@
               class="w-full px-4 py-3 border border-gray-300 rounded-lg bg-gray-50 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
             />
             <div id="iconPreview" class="mt-4 hidden">
+              <p class="text-sm text-gray-600 mb-2 font-medium">Preview:</p>
               <img
                 id="previewIcon"
                 class="h-20 w-20 object-cover rounded-lg shadow border border-gray-200"
@@ -261,13 +269,13 @@
             <p id="iconError" class="text-red-500 text-sm mt-2 hidden"></p>
           </div>
 
-          <!-- Submit -->
-          <div class="md:col-span-2 text-center mt-8">
+          <!-- Submit Button -->
+          <div class="md:col-span-2 text-center mt-6">
             <button
               type="submit"
-              class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-10 py-4 rounded-xl font-semibold shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300"
+              class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-10 py-4 rounded-xl font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-200"
             >
-              Registration Charge(Pay Now)
+              Register Academy
             </button>
           </div>
         </form>
@@ -275,7 +283,7 @@
     </section>
 
     <script>
-      // File Preview Handler
+      // Logo + Icon preview with validation
       function handleImagePreview(inputId, previewId, errorId, maxSizeKB) {
         const input = document.getElementById(inputId);
         const previewDiv = document.getElementById(previewId);
@@ -318,12 +326,27 @@
       handleImagePreview("logo", "logoPreview", "logoError", 500);
       handleImagePreview("icon", "iconPreview", "iconError", 200);
 
-      // Form Submit
+      // Form Submission
       document
         .getElementById("academyForm")
         .addEventListener("submit", function (e) {
           e.preventDefault();
-          alert("✅ Academy registered successfully!");
+
+          const formData = new FormData(this);
+          console.log(...formData);
+
+          const data = {};
+
+          formData.forEach((value, key) => {
+            if (value instanceof File) {
+              data[key] = value.name;
+            } else {
+              data[key] = value;
+            }
+          });
+
+          console.log("Form Data Submitted:", data);
+          alert("Academy registered successfully! (Check console for data)");
         });
     </script>
   </body>
